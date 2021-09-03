@@ -1,0 +1,37 @@
+.navbar {
+    text-transform: uppercase;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    position: relative;
+}
+
+.navbar-brand {
+    font-size: 36px;
+    font-weight: 500;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-size: 18px;
+}
+
+
+.navbar-dark .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='black' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .navbar-collapse {
+        z-index: 1; 
+        background-color: #f4f3ee;
+        top: 80px;
+        left: 0;
+        padding-left: 2rem;
+        padding-bottom: 2rem;
+        width: 100%;
+        position: absolute;
+    }
+
+}
+

@@ -1,0 +1,11 @@
+.container__row  {
+    margin-bottom: 10rem;
+}
+
+.container h1 {
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 34px;
+    font-weight: 700;
+}
+

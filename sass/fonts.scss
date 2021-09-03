@@ -1,0 +1,18 @@
+$fonts: (
+    first: 'Open Sans',
+    second: 'Archivo Narrow',
+);
+
+@function getFonts($font) {
+    @return map-get($fonts, $font);
+};
+
+.navbar, 
+.container h1,
+.footer__p {
+    font-family: getFonts(first), 'sans-serif';
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-family: getFonts(second), 'sans-serif';
+}

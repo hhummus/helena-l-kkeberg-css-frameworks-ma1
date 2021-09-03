@@ -1,0 +1,10 @@
+.navbar,
+.container h1,
+.footer__p {
+  font-family: "Open Sans", "sans-serif";
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  font-family: "Archivo Narrow", "sans-serif";
+}
+/*# sourceMappingURL=fonts.css.map */

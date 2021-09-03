@@ -1,0 +1,68 @@
+$colours: (
+    first: #ffffff,
+    second: #6a6a6a, 
+    third: #e2e2e2,
+    fourth: #e5e5e5,
+    fifth: #8d8d8d,
+    sixth: #c32c72,
+    seventh: #f4f3ee,
+    eight: #000000,
+);
+
+@function getColour($colour) {
+    @return map-get($colours, $colour);
+}
+
+body { 
+    background-color: getColour(fourth);
+}
+
+.container__product {
+    background-color: getColour(seventh);
+}
+
+.container__row .card-margin:nth-child(3) .container__product,
+.container__row .card-margin:nth-child(8) .container__product {
+    background-color: getColour(first);
+    border: 1px solid getColour(sixth);
+}
+
+.container__row .card-margin:nth-child(6) .container__product {
+    background-color: getColour(sixth);
+}
+
+.navbar {
+    background-color: getColour(seventh) !important;
+}
+
+.footer {
+    background-color: getColour(seventh);
+}
+
+.navbar .navbar-brand {
+    color: getColour(eight);
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: getColour(fifth);
+}
+
+.navbar-dark .navbar-nav .active > .nav-link {
+    color: getColour(sixth);
+}
+
+.footer  {
+    &__p { 
+        color: getColour(fifth); 
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .navbar-dark .navbar-nav .nav-link {
+        color: getColour(eight);
+    }
+
+    .footer {
+        background-color: getColour(first);
+    }
+}
